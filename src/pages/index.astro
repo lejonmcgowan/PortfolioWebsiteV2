@@ -44,13 +44,7 @@ const { Content: AboutContent } = await render(aboutEntry);
       )
     }
 
-    <!-- Projects Section -->
-    {siteConfig.sections.projects && <Projects />}
-
-    <!-- Blog Section -->
-    {siteConfig.sections.blog && <Blog />}
-
-    <!-- Work Experience Section -->
+     <!-- Work Experience Section -->
     {
       siteConfig.sections.work && (
         <Timeline
@@ -62,6 +56,15 @@ const { Content: AboutContent } = await render(aboutEntry);
         />
       )
     }
+    
+    <!-- Projects Section -->
+    {siteConfig.sections.projects && <Projects />}
+
+     <!-- Hackathons Section -->
+    {siteConfig.sections.hackathons && <Hackathons />}
+
+    <!-- Blog Section -->
+    {siteConfig.sections.blog && <Blog />}
 
     <!-- Education Section -->
     {
@@ -76,9 +79,6 @@ const { Content: AboutContent } = await render(aboutEntry);
         />
       )
     }
-
-    <!-- Hackathons Section -->
-    {siteConfig.sections.hackathons && <Hackathons />}
 
     <!-- Contact Section -->
     {siteConfig.sections.contact && <Contact />}

@@ -99,7 +99,7 @@ export const siteConfig: SiteConfig = {
   name: "LeJon McGowan",
   title: "Game Programmer, from UI to Engine",
   description:
-    "A modern, responsive, and customizable portfolio template built with Astro and DaisyUI. Perfect for developers, designers, and creatives to showcase their work and skills.",
+    "I am an engine programmer with 10 years of experience working among Unity, Unreal Engine 4/5, and proprietary engines. I’ve worked all along the stack from UI to low level engine programming, so feel free to throw any technical challenge my way.",
   avatar: "../assets/portfolioPhoto.jpg",
   location: "🇺🇸 Los Angeles, CA",
   email: "lejonmcgowan@gmail.com",
@@ -136,12 +136,12 @@ export const siteConfig: SiteConfig = {
     ],
   },
   sections: {
-    about: true,
+    about: false,
     projects: true,
     blog: false,
     work: true,
     education: true,
-    hackathons: false,
+    hackathons: true,
     contact: false,
   },
 };
