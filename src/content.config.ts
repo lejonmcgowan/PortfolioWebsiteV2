@@ -45,13 +45,14 @@ const projects = defineCollection({
 // Hackathons collection
 const hackathons = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/hackathons" }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
-    location: z.string(),
     description: z.string(),
+    image: image(),
     startDate: z.coerce.date(),
     endDate: z.coerce.date().optional(),
-    logo: z.string().optional(),
+    skills: z.array(z.string()),
+    demoLink: z.string().url().optional(),
     sourceLink: z.string().url().optional(),
   }),
 });
