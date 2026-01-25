@@ -1,10 +1,11 @@
 ---
-title: "Code Tips Platform"
-description: "A centralized platform for storing and sharing code snippets, enabling developers to create, discover, and manage code examples across 100+ programming languages."
-image: "https://api.dicebear.com/9.x/glass/svg?seed=Jocelyn"
-startDate: "2025-06-01"
-skills: ["Laravel", "Inertia JS", "Vue 3", "TypeScript", "Monaco Editor", "Tailwind CSS"]
-demoLink: "https://codetips.cloud"
+title: "Unity’s Data-Oriented Technology Stack (DOTS)"
+description: "DOTS includes technologies and packages that deliver a data-oriented design approach to building games in Unity. Applying data-oriented design to a game’s architecture empowers creators to scale processing in a highly performant manner."
+image: "https://unity.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ffuvbjjlp%2Fproduction%2Fa8a7d413c81ac8a5cf104d3dab696a61010b8838-1920x1080.jpg%3Fauto%3Dformat&w=3840&q=75"
+startDate: "2019-12-01"
+endDate: "2022-08-01"
+skills: ["Unity", "C++", "C#", "Data Oriented Programming", "multi-threaded"]
+demoLink: "https://unity.com/dots"
 ---
 
 ## About Code Tips
