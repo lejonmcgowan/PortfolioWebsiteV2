@@ -1,6 +1,6 @@
 ---
 import { getCollection, render } from "astro:content";
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
+import PersonalLayout from "../../layouts/PersonalLayout.astro";
 
 export async function getStaticPaths() {
   const projectEntries = await getCollection("hackathons");
@@ -15,7 +15,7 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 ---
 
-<ProjectLayout
+<PersonalLayout
   title={entry.data.title}
   description={entry.data.description}
   startDate={entry.data.startDate}
@@ -26,4 +26,4 @@ const { Content } = await render(entry);
   sourceLink={entry.data.sourceLink}
 >
   <Content />
-</ProjectLayout>
+</PersonalLayout>
