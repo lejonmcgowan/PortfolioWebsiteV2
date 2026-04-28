@@ -10,6 +10,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  site: 'https://lejonmcgowan.github.io/PortfolioWebsiteV2/',
+  site: 'https://lejonmcgowan.github.io/',
   base: '/PortfolioWebsiteV2',
 });
