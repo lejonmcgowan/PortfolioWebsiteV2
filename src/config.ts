@@ -105,7 +105,7 @@ export const siteConfig: SiteConfig = {
   email: "lejonmcgowan@gmail.com",
   socialLinks: {
     github: "https://github.com/lejonmcgowan",
-    linkedin: "https://linkedin.com/in/lejonmcgowan",
+    linkedin: "https://www.linkedin.com/in/lejon-mcgowan/",
     bluesky: "https://bsky.app/profile/lejonmcgowan.bsky.social",
     discord: "https://discord.com/users/lejonmcgowan"
   },

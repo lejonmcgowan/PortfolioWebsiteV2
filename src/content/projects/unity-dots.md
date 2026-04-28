@@ -1,6 +1,6 @@
 ---
 title: "Unity’s Data-Oriented Technology Stack (DOTS)"
-description: "DOTS includes technologies and packages that deliver a data-oriented design approach to building games in Unity. Applying data-oriented design to a game’s architecture empowers creators to scale processing in a highly performant manner."
+description: "Worked on the Entities team to integrate DOTS into packages and the core of Unit itself"
 image: "https://unity.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ffuvbjjlp%2Fproduction%2Fa8a7d413c81ac8a5cf104d3dab696a61010b8838-1920x1080.jpg%3Fauto%3Dformat&w=3840&q=75"
 startDate: "2019-12-01"
 endDate: "2022-08-01"
@@ -8,67 +8,19 @@ skills: ["Unity", "C++", "C#", "Data Oriented Programming", "multi-threaded"]
 demoLink: "https://unity.com/dots"
 ---
 
-## About Code Tips
+DOTS includes technologies and packages that deliver a data-oriented design approach to building games in Unity. Applying data-oriented design to a game’s architecture empowers creators to scale processing in a highly performant manner.
+---
 
-Code Tips is a community-driven platform designed to help developers share, discover, and manage code snippets efficiently. Built with the philosophy that knowledge sharing accelerates learning, it provides a centralized repository for code examples across multiple programming languages.
+I worked on the DOTS initiative at Unity. It was an amazing opportunity getting to work on such cutting edge, high performance, world class technology. 
 
-## Core Features
+But to summarize this project, DOTS is Unity's attempt to give a new paradigm to how you approach game development. Instead of GameObjects, DOTS makes use of an 
+ECS paradigm powered by the opinionated C# Burst compiler, and ultiamtely driven with parallelism in mind (particularly with job based scheduling). This is a system esepcially designed for larger scale, AAA projects or for games that are simulation heavy. 
 
-### Comprehensive Code Snippet Management
-- **Create & Edit**: Full-featured code editor powered by Monaco Editor
-- **100+ Language Support**: Extensive syntax highlighting for Python, JavaScript, TypeScript, Java, C++, Go, Rust, PHP, Ruby, and many more
-- **Organize Your Code**: Personal library for managing your code snippets
-- **CRUD Operations**: Complete control over your code tips - create, read, update, and delete
+In particular, the team I worked on maintained the ESC part in the Entities package. So we worked at the heart of DOTS to evangelize for the project, help other parts of the engine integrate into DOTS, and make sure Burst optimizations were performing as expected. A few othe the reponsibilies I had over my tenue on Entites included
 
-### Social & Discovery Features
-- **Like System**: Show appreciation for useful code snippets
-- **Explore Public Tips**: Browse code examples shared by the community
-- **Browse by Language**: Filter and discover tips for specific programming languages
-- **User Profiles**: Public developer profiles showcasing contributions and statistics
-- **View & Share Tracking**: Monitor the reach and impact of your code tips
+- verifying performance of Burst function pointers, and adding them where performance gains were met
+- helping to integrate IJobEntities as scaffolding over older pipelines of how you would engage with the package
+- taking responsibility for EntityTransactionManager, used for engaging in multi-threaded acts with Entities
+- comparaing approaches with different data structures to help minimize sptial footprints when using debug level features. 
 
-### Search & Navigation
-- **CodeTip Search**: Quickly find relevant code examples
-- **Language Filters**: Navigate through language-specific collections
-- **Discovery Feed**: Explore trending and popular code snippets
-
-## Technical Architecture
-
-### Frontend Stack
-Built with modern web technologies for a smooth, reactive experience:
-- **Vue 3**: Progressive JavaScript framework with Composition API
-- **TypeScript**: Type-safe development for robust code
-- **Monaco Editor**: Industry-standard code editor (powers VS Code)
-- **Tailwind CSS**: Utility-first CSS framework for custom designs
-- **Ziggy**: Laravel route helper for seamless frontend routing
-
-### Backend Infrastructure
-Powered by **Laravel** (PHP), the backend provides:
-- Route-based architecture with clean separation of concerns
-- RESTful API endpoints for all operations
-- Database-driven content management
-- Session-based authentication and user management
-
-### User Experience
-- **Light/Dark Mode**: Theme support with system preference detection
-- **Responsive Design**: Optimized for desktop and mobile devices
-- **OG Image Generation**: Social media preview images for shared snippets
-- **Component-Driven UI**: Modular, maintainable component architecture
-
-## Authentication & User Management
-- Complete authentication system with login and registration
-- Email verification for account security
-- Password reset functionality
-- Social login integration for quick access
-- User profile customization
-
-## Purpose & Impact
-
-Code Tips serves as a valuable resource for developers of all skill levels - from beginners learning new languages to experienced developers documenting solutions. By providing a centralized, searchable platform for code snippets, it helps developers:
-
-- Save time by reusing proven code patterns
-- Learn from community-shared examples
-- Document and organize their own code library
-- Share knowledge and contribute to the developer community
-
-The platform emphasizes collaboration and knowledge exchange, making programming resources more accessible to everyone.
+Absolutely amazing experience. Really help me approciate game engines even more than before I got in. 
