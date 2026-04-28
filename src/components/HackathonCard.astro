@@ -24,7 +24,7 @@ function formatPeriod(startDate: Date, endDate?: Date) {
 ---
 
 <article class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
-  <a href={`/hackathons/${hack.id}`}>
+  <a href={`/PortfolioWebsiteV2/hackathons/${hack.id}`}>
     <figure class="aspect-video">
       <Image
         src={hack.data.image}
@@ -37,7 +37,7 @@ function formatPeriod(startDate: Date, endDate?: Date) {
   </a>
   <div class="card-body">
     <h3 class="card-title hover:text-primary transition-colors">
-      <a href={`/hackathons/${hack.id}`}>{hack.data.title}</a>
+      <a href={`/PortfolioWebsiteV2/hackathons/${hack.id}`}>{hack.data.title}</a>
     </h3>
     <time class="text-sm text-base-content/60">
       {formatPeriod(hack.data.startDate, hack.data.endDate)}
