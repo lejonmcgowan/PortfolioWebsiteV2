@@ -11,5 +11,5 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
   site: 'https://lejonmcgowan.github.io/PortfolioWebsiteV2/',
-  base: '/PortfolioWebsiteV2',
+  base: '/',
 });
